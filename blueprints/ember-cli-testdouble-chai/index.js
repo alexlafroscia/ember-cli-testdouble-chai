@@ -5,6 +5,6 @@ module.exports = {
   normalizeEntityName: function() {},
 
   beforeInstall: function() {
-    return this.addBowerPackageToProject('testdouble-chai', 'git@github.com:alexlafroscia/testdouble-chai.git#support-amd-modules');
+    return this.addBowerPackageToProject('testdouble-chai', 'alexlafroscia/testdouble-chai#support-amd-modules');
   }
 };
