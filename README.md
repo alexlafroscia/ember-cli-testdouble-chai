@@ -1,27 +1,24 @@
-# Ember-cli-testdouble-chai
+# ember-cli-[testdouble-chai][testdouble-chai]
 
-This README outlines the details of collaborating on this Ember addon.
+[![Build Status](https://travis-ci.org/alexlafroscia/ember-cli-testdouble-chai.svg?branch=master)](https://travis-ci.org/alexlafroscia/ember-cli-testdouble-chai)
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd ember-cli-testdouble-chai`
-* `npm install`
-* `bower install`
+```bash
+ember install ember-cli-testdouble-chai
+```
 
-## Running
+## Usage
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+See the [`testdouble-chai`][testdouble-chai] repo for all the details on how to use it.  However, the basics are:
 
-## Running Tests
+```
+var someFunction = td.function();
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+someFunction('foo');
 
-## Building
+expect(someFunction).to.be.called;
+expect(someFunction).to.be.calledWith('foo');
+```
 
-* `ember build`
-
-For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
+[testdouble-chai]: https://github.com/BaseCase/testdouble-chai
