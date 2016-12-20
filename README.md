@@ -1,3 +1,19 @@
+# DEPRECATED
+
+This repo has been replaced by [`ember-cli-chai`](https://github.com/ember-cli/ember-cli-chai), which now officially supports `testdouble-chai` (this repo pre-dates that one).
+
+Switching is easy:
+
+```bash
+npm uninstall --save-dev ember-cli-testdouble-chai
+ember install ember-cli-chai
+npm install --save-dev testdouble-chai
+```
+
+That's it! Everything should work exactly as before.
+
+***
+
 # ember-cli-[testdouble-chai][testdouble-chai]
 
 [![Build Status](https://travis-ci.org/alexlafroscia/ember-cli-testdouble-chai.svg?branch=master)](https://travis-ci.org/alexlafroscia/ember-cli-testdouble-chai)
